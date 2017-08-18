@@ -1,0 +1,24 @@
+POST:
+curl -X POST 'http://127.0.0.1:3000/users' -d '{"name":"Luda", "email":"Luda@Luda.com", "password":"meow"}' -H "Content-Type: application/json"
+fail:
+curl -X POST 'http://127.0.0.1:3000/users' -d '{"email":"Nemo"}' -H "Content-Type: application/json"
+
+
+PUT:
+curl -X PUT 'http://127.0.0.1:3000/users/1502637361379' -d '{"name":"Liuda", "email":"Lusiaa@Luda.com", "password": "meow"}' -H "Content-Type: application/json"
+fail:
+curl -X PUT 'http://127.0.0.1:3000/users/9999' -d '{"name":"Nemo", "email":"Nemo"}' -H "Content-Type: application/json"
+curl -X PUT 'http://127.0.0.1:3000/users/0' -d '{"name":"Nemo", "email":"Nemo", "password": "12324242"}' -H "Content-Type: application/json"
+
+DELETE:
+curl -X DELETE 'http://127.0.0.1:3000/users/0'  -H "Content-Type: application/json"
+fail:
+curl -X DELETE 'http://127.0.0.1:3000/users/9999' -H "Content-Type: application/json"
+
+GET:
+curl 'http://127.0.0.1:3000/users/0' -H "Content-Type: application/json"
+fail:
+curl 'http://127.0.0.1:3000/users/9999' -H "Content-Type: application/json"
+
+GET all
+curl 'http://127.0.0.1:3000/users' -H "Content-Type: application/json"

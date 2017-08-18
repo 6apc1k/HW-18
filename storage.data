@@ -1,0 +1,14 @@
+[
+  {
+    "password": "q8xowdnaxitf3g3ffjjl",
+    "name": "johndoe",
+    "email": "john.doe@myownservice.com",
+    "id": 1
+  },
+  {
+    "name": "johndoefriend",
+    "email": "friend.of.john.doe@myownservice.com",
+    "password": "2a1cgv7e0be2d26my8g9",
+    "id": 2
+  }
+]
